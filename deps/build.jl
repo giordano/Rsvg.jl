@@ -14,17 +14,15 @@ gio = library_dependency("gio", aliases = ["libgio-2.0", "libgio-2.0-0"])
     end
 end
 
-@static Sys.isapple() begin
+@static if Sys.isapple() begin
         using Homebrew
         provides(Homebrew.HB, "librsvg", [rsvg], os=:Darwin)
-        provides(Homebrew.HB, "libgio", [gio], os=:Darwin)
     end
 end
 
-@static Sys.iswindows() begin
+@static if Sys.iswindows() begin
         using WinRPM
         provides(WinRPM.RPM,"librsvg-2-2",rsvg,os = :Windows)
-        provides(WinRPM.RPM,"glib2",gio,os = :Windows)
     end
 end
 
