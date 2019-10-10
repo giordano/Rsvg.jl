@@ -15,6 +15,7 @@ products = Product[
 dependencies = [
     # Freetype2-related dependencies
     "build_Zlib.v1.2.11.jl",
+    "build_XML2.v2.9.9.jl",
     "build_Bzip2.v1.0.6.jl",
     "build_FreeType2.v2.10.1.jl",
     # Glib-related dependencies
@@ -23,6 +24,8 @@ dependencies = [
     "build_Libiconv.v1.16.0.jl",
     "build_Gettext.v0.20.1.jl",
     "build_Glib.v2.59.0.jl",
+    # libcroco
+    "build_Libcroco.v0.6.13.jl",
     # Fontconfig-related dependencies
     "build_Libuuid.v2.34.0.jl",
     "build_Expat.v2.2.7.jl",
