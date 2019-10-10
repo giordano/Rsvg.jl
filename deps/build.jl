@@ -49,7 +49,7 @@ dependencies = [
 for dependency in dependencies
     # These libraries are necessary on Linux, FreeBSD and macOS...
     platform_key_abi() isa Windows &&
-        occursin(r"^build_(Expat|Fontconfig)", dependency) &&
+        occursin(r"^build_Expat", dependency) &&
         continue
     # ...these only on Linux and FreeBSD
     platform_key_abi() isa Union{MacOS,Windows} &&
