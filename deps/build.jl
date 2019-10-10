@@ -54,7 +54,7 @@ for dependency in dependencies
         continue
     # ...these only on Linux and FreeBSD
     platform_key_abi() isa Union{MacOS,Windows} &&
-        occursin(r"^build_(Libuuid|Graphite2|HarfBuzz|X11)", dependency) &&
+        occursin(r"^build_(Libuuid|X11)", dependency) &&
         continue
 
     # it's a bit faster to run the build in an anonymous module instead of
