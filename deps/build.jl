@@ -42,6 +42,7 @@ dependencies = [
     # Pango-only dependencies
     "build_FriBidi.v1.0.5.jl",
     # And finally...Pango!
+    "build_gdk-pixbuf.v2.38.2.jl",
     "build_Pango.v1.42.4.jl",
     "build_Rsvg.v2.42.2.jl"
 ]
