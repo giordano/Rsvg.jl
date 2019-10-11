@@ -9,6 +9,7 @@ BinaryProvider = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
 
 [compat]
 julia = "0.7, 1"
+Cairo = "0.8"
 
 [extras]
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
