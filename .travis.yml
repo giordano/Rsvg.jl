@@ -14,4 +14,4 @@ matrix:
   - julia: nightly
 notifications:
     email: false
-coveralls: true
+coveralls: false
