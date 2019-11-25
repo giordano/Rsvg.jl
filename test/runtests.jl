@@ -84,3 +84,9 @@ d = test_get_dimension(f);
 @test d.width == 576
 
 end
+
+@testset "error handling" begin
+
+@test_throws ErrorException Rsvg.handle_new_from_data("not a valid data input")
+
+end
