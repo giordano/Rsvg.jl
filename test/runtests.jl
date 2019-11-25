@@ -89,4 +89,10 @@ end
 
 @test_throws ErrorException Rsvg.handle_new_from_data("not a valid data input")
 
+try
+    Rsvg.handle_new_from_data("not a valid data input")
+catch err
+    @test startswith(err.msg, "ccall")
+end
+
 end
